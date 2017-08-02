@@ -6,13 +6,15 @@ class User < ActiveRecord::Base
          
       belongs_to :plan
       
+       
       
-     attr_accessor :stripe_card_token
+    Stripe.api_key = ENV["STRIPE_API_KEY"]
+              attr_accessor :stripe_card_token
           def save_with_subscription
             if valid?
               customer = Stripe::Customer.create(description: email, plan: plan_id, card: stripe_card_token)
-            
+           
             end
           end
-  end
-
+          end
+  
