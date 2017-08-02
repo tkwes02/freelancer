@@ -14,6 +14,13 @@
        
       
             <div class="contentright">   
+             <% if user_signed_in? %>
+             
+             
+             
+             
+     <% else %>
+             
         Meet and Hire Web Designers and Developers <br>
         to get your projects done.<br>
         
@@ -33,7 +40,8 @@
         <%= link_to "Be a Premium Member" , new_user_registration_path(plan: @pro_plan.id), class: "btn btn-info btn-lg" %>    
       
       </div>
-  
+          
+ <% end %>
   
   
 </div>
@@ -45,92 +53,104 @@
 
 </div>
 
+ 
 
-
+<br><br>
 
 <div class="row row-centered">
+  <div class="col-sm-8">
   
-  
-  <div class="col-md-4">
-    
-    <h3 class="midrow">
-       <span class="glyphicon glyphicon-shopping-cart " ></span> 
-     
-       Get something you love</h3>
-   
-      
-       
-      <p>Our marketplace is a world of great goods and collections
-      </p>
-  
-<p>
- 
-</p>
-  </div>
-  
-  <div class="col-md-4">
-    
-    <h3 class="midrow">
-   <span class="glyphicon glyphicon-picture"></span>
-       Find your  favorite shop</h3>
- 
-      
-      <p>Independent sellers from everywhere are right here
-      </p>
-
-<p>
- 
-</p>
-  </div>
-
-  <div class="col-md-4">
-    <h3 class="midrow">
-      
-     <span class="glyphicon glyphicon-piggy-bank" ></span> 
-
-      Buy safely and securely</h3>
-   
-      
-      <p> Shop with confidence
-      </p>
-  <p>
-  
-</p>
-  
-  </div>
-  
-  </div>
-
-
-<br><br>
-<br><br>
-<div class="list-group ">
-  <div class="list-group-item list-group-item-warning">
-    <h4 class="page-header ">Get straight to growing your business</h4>
-    <p class="list-group-item-text ">
-        When we say it’s never been easier to start a business, we mean it. 
-        You can own a gorgeous store of your own that reflects the personality of your business.
+  <div class="row">
+    <div class="col-sm-6">
         
-</p>
-  </div>
-</div>
+        
+<div class="faq-header"> It's Free to use this website? </div>
+ <p><p>
+ 
+Yes absolutely. It's free to post a project and use our entire website. 
+We don't do fees up front; it makes us focus on quality. 
+<p>
+    <div class="faq-header">
+Who is Crowdlancer for?</div>
+ <p><p>
+For anyone looking to get a web project done, and looking to save time, outsource something they can't do, or cut costs. 
+Also, open to any freelance web designers and developers, and entrepreneurs looking for project work.
+    
+       
+<div class="faq-header">I'm a freelancer, why is Crowdlancer better for me?</div>
+
+We don't charge a membership because you want to post to get hired. It's free until you actually contact someone for hire.
 
 
+<br><br>
+<br><br>
 
-
+   <h4> Create a new project posting for absolutely <span class="label label-default">FREE</span></h4>.
 
 
 <br><br>
 
+   <h4> 
+ Find a freelance project to work on & make <span class="label label-default">$$$</span></h4> 
+    </div>
+    <div class="col-sm-6">
 
-<div class="list-group">
-  <div class="list-group-item list-group-item-success">
-    <h4 class="page-header">An ecommerce store made for you</h4>
-    <p class="list-group-item-text">
-       Now you can sell online, and create a marketplace for customers to buy your items.
-</p>
+<div class="faq-header">
+Will I get ripped off?</div>
+
+NO!  Rarely will that happen though, as our process makes you choose only the best and most trustworthy freelancers. 
+
+<p><p>
+    
+    
+<div class="faq-header">
+Is my data safe and secure?</div>
+Yes! Everything is encryped in the latest 128bit SSL certificate, and only a few chosen ninjas have physical access to our servers.
+
+<p><p>
+
+<div class="faq-header">
+Who runs this site, who are you guys? </div>
+We are a bunch of handsome, cool freelance web developers who  use Crowdlancer ourselves to either find work or get work done. 
+
+
+    </div>
   </div>
+  
+  </div>
+ 
+ 
+  <div class="col-sm-4">
+      <ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">14</span>
+   Logo Design
+  </li>
+  <li class="list-group-item">
+    <span class="badge">22</span>
+  Graphic Design
+  </li>
+  <li class="list-group-item">
+    <span class="badge">19</span>
+   E-commerce
+  </li>
+  <li class="list-group-item">
+    <span class="badge">5</span>
+ Mobile Apps
+  </li>
+<li class="list-group-item">
+    <span class="badge">30</span>
+ Basic Web Design
+  </li>
+      
+      </ul> 
+  </div>
+  
+  
 </div>
+
+
+
 
 
 <br><br>
