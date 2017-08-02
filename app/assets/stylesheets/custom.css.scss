@@ -3,7 +3,16 @@
 @import "bootstrap";
 
 
-
+.flash-container {
+  position: absolute;
+  width: 100%;
+}
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: -14px;
+}
 
 .container {
   background: url('members.gif') no-repeat;
@@ -39,7 +48,7 @@ body {
 
 
 .navbar-default {
-   background-color: #FBFCFC;
+   background-color: #ADD8E6;
     top: 0px;
    
     height: 90px;
