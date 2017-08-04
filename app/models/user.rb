@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
          
       belongs_to :plan
       has_one :profile
+       has_many :posts
+       default_scope { order(created_at: 'DESC') }
        
       
     Stripe.api_key = ENV["STRIPE_API_KEY"]
