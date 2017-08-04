@@ -1,0 +1,52 @@
+
+<div class="row">
+  <div class="col-md-5 col-md-offset-4">
+      
+<h3>Our Process Will Inspire You </h3>
+
+
+<br><br>
+<div class="faq-header"> 
+Posting your project</div>
+
+<br>
+As a entrepreneur/investor, you can describe your project(s) that you want to work on in your profile. As a web developer, you can get help with your project online or find freelancing opportunity by 
+contacting the entrepreneur/investor for work.
+Check different members' profiles.
+
+
+
+<br><br>
+<div class="faq-header"> 
+When you subscribed, you can interact with freelancers </div>
+
+<br>
+For only $10 per year, your project or business idea can turn into a discussion. They can contact you by email, phone, and check out your website.
+Cool, eh? The freelancers can show you how qualified they are to meet your project milestone. 
+
+
+
+    <% if user_signed_in? %><br><br>
+             <div class="text-center">
+                 
+           <h3>Get Noticed. </h3> <br>
+            <h3>&nbsp;	&nbsp; &nbsp;	&nbsp; Get Connected. </h3><br>
+           <h3>&nbsp;	&nbsp; &nbsp;	&nbsp;Get Ahead. </h3>
+           <br>
+             
+ </div>
+
+           
+             
+             
+     <% else %>
+             
+<br><br>
+
+<br><br>
+<div class="text-center">
+<div class="btn-group">
+        <%= link_to "You are Ready?" , root_path, class: "btn btn-warning btn-lg" %>    
+      <% end %>
+</div>
+</div></div>

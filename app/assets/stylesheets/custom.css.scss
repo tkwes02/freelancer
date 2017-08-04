@@ -4,7 +4,7 @@
 
 
 .flash-container {
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 .alert-notice, .alert-alert {
@@ -15,7 +15,14 @@
   border-color: rgba(255, 255, 255, 0.5);
   margin-top: -14px;
 }
-
+.user-index-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+.well.white-bg {
+    background-color: white;
+}
 .container {
   background: image-url('members.gif') no-repeat;
   

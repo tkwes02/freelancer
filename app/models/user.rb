@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
       belongs_to :plan
-      
+      has_one :profile
        
       
     Stripe.api_key = ENV["STRIPE_API_KEY"]

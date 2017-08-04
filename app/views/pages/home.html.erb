@@ -6,7 +6,7 @@
        
            <div class="contentleft">   
           
-        <h2>A Social Way to <br>outsource your projects</h2>
+        <h2>A Social Way to <br>&nbsp;	&nbsp; &nbsp; Outsource Your Projects</h2>
         
         </div></div>
         
@@ -16,7 +16,14 @@
             <div class="contentright">   
              <% if user_signed_in? %>
              
+           <h4>  Get Noticed. </h4> <br>
+            <h4> &nbsp;	&nbsp; Get Connected. </h4><br>
+           <h4>&nbsp;	&nbsp; &nbsp;	&nbsp;Get Ahead. </h4>
+           <br>
              
+ 
+
+           
              
              
      <% else %>
@@ -56,6 +63,43 @@
  
 
 <br><br>
+
+<% if user_signed_in? %>
+<div class="row row-centered">
+<div class="col-md-5">
+    
+    <div class="well">
+        <h2 class="text-center"><span class="glyphicon glyphicon-user Your Profile" aria-hidden="true"></span>&nbsp; My Profile</h2>
+        <% if current_user.profile %>
+        <div class="text-center">
+     <%= link_to "View Profile", user_path(id: current_user.id), class:  'btn btn-default btn-md' %>
+     
+     <%= link_to "Edit Profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-md' %>
+     
+     <%= link_to "Edit Account", edit_user_registration_path, class: 'btn btn-default btn-md' %>
+     </div>
+     <% else %>
+     
+            <h4 class="text-center">  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+            <%= link_to "Create your profile!", new_user_profile_path(user_id: current_user.id) %></h4>    <br>
+        <% end %>
+    </div>
+</div>
+
+<div class="col-md-5">
+    
+    <div class="well">
+        <h2 class="text-center"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>&nbsp; Community</h2>
+     <%= link_to "Join the Crowd", users_path, class: 'btn btn-warning btn-lg btn-block' %>
+    </div>
+</div>
+
+
+</div>
+
+<% else %>
+
+
 
 <div class="row row-centered">
   <div class="col-sm-8">
@@ -151,6 +195,6 @@ We are a bunch of handsome, cool freelance web developers who  use Crowdlancer o
 
 
 
-
+<% end %>
 
 <br><br>

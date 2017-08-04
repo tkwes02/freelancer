@@ -27,6 +27,7 @@ gem 'devise'
 gem "figaro"
 
 gem 'stripe'
+gem 'paperclip', '4.3.6'    
 
 
 # Use jquery as the JavaScript library
