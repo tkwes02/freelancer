@@ -18,10 +18,12 @@
    
    
   
+       <% if user_signed_in? %>
    <% if current_user.profile %>
    <li><div class="btn btn-warning">   <%= link_to "Chat Feeds", newsfeed_path %></div></li>   &nbsp;	&nbsp; &nbsp;	&nbsp; 
      <% end %>
-       <% if user_signed_in? %>
+     
+     
       <li><div class="btn btn-warning">   <%= link_to "Community", users_path %></div></li>   &nbsp;	&nbsp; &nbsp;	&nbsp;
     
        <li><%= button_to "Sign Out", destroy_user_session_path, method: :delete,  :class => "btn btn-danger" %></li>
