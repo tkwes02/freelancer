@@ -1,5 +1,6 @@
-     <% if current_user %>
-        <div class="panel panel-default">
+       <% if current_user.profile %>
+   
+       <div class="panel panel-default">
           <div class="panel-body">
         <%= form_for(@post) do |f| %>
                 <div class="form-group">
@@ -16,7 +17,7 @@
                 
                 <div class="row">
                     <div class="col-sm-5">
-                      <a href="<%=user_path(post.user)%>"> </a>
+                      <a href="<%=user_path(post.user.id)%>"> </a>
                       <%= post.user.profile.first_name %> <%= post.user.profile.last_name %>  
                     </div>
                   <div class="col-sm-7">
