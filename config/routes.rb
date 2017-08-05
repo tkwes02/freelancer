@@ -8,10 +8,7 @@ Rails.application.routes.draw do
     end
   
   get 'about', to: 'pages#about'
-  get 'newsfeed', to: "posts#index", as: "posts"
-  post 'newsfeed', to: "posts#create"
-  post 'users/:id/post', to: "posts#create", as: "receive_post"
-  delete 'posts/:id', to: "posts#destroy", as: "delete_post"
+
   
 
   # The priority is based upon order of creation: first created -> highest priority.
